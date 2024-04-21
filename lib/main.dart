@@ -6,7 +6,7 @@ import "package:grock/grock.dart";
 
 void main() {
   //ReverPod kullanabilmek için ProviderScope ile sarmalamak gerekiyor
-  runApp(ProviderScope(child: const MainApp()));
+  runApp(ProviderScope(child:  MainApp()));
 }
 
 class MainApp extends StatelessWidget {
