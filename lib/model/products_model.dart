@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 class ProductsModel{
   //Üründe olan özellikler
   String image;
@@ -5,5 +7,10 @@ class ProductsModel{
   int price;
   double star;
   bool isSaved;
-  ProductsModel(this.image, this.title, this.price, this.star, this.isSaved);
+
+  String desc;
+  String descTitle;
+  List<Color> colors;
+
+  ProductsModel({required this.image, required this.title, required this.price, required this.star, required this.isSaved, required this.desc, required this.colors, required this.descTitle});
 }

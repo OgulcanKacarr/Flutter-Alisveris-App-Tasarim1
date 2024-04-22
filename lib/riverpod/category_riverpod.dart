@@ -11,11 +11,32 @@ class CategoryRiverpod extends ChangeNotifier {
     categoryTitle: "Hot Deals",
     products: [
       ProductsModel(
-          "assets/images/im_c1.png", "apple iMac 24", 1299, 4.9, false),
+          image: "assets/images/im_c1.png",
+          title: "apple iMac 24",
+          price: 1299,
+          star: 4.9,
+          isSaved: false,
+          colors: [Colors.orange,Colors.green,Colors.pinkAccent],
+          desc: "Wait: Price Check on eBay — Try the eBay way—getting what you want doesn't have to be a splurge. Browse iMac 1. generation!",
+      descTitle: "apple iMac 24"),
       ProductsModel(
-          "assets/images/im_w1.png", "Apple Watch V1", 859, 4.4, true),
+          image: "assets/images/im_w1.png",
+          title: "Apple Watch V1",
+          price: 859,
+          star: 4.4,
+          isSaved: true,
+          colors: [Colors.orange,Colors.green,Colors.pinkAccent],
+          desc: "Wait: Price Check on eBay — Try the eBay way—getting what you want doesn't have to be a splurge. Browse iMac 1. generation!",
+          descTitle: "apple iMac 24"),
       ProductsModel(
-          "assets/images/im_p1.png", "Apple iPhone 12 Series", 1199, 5.9, false)
+          image: "assets/images/im_p1.png",
+          title: "Apple iPhone 12 Series",
+          price: 1199,
+          star: 5.9,
+          isSaved: false,
+          colors: [Colors.orange,Colors.green,Colors.pinkAccent],
+          desc: "Wait: Price Check on eBay — Try the eBay way—getting what you want doesn't have to be a splurge. Browse iMac 1. generation!",
+          descTitle: "apple iMac 24"),
     ],
   );
 
@@ -24,11 +45,14 @@ class CategoryRiverpod extends ChangeNotifier {
     categoryTitle: "Most Popular",
     products: [
       ProductsModel(
-          "assets/images/im_c2.png", "apple iMac 30", 1000, 4.9, true),
-      ProductsModel(
-          "assets/images/im_w2.png", "Apple Watch V2", 1859, 4.4, false),
-      ProductsModel(
-          "assets/images/im_p2.png", "Apple iPhone 14 Series", 1199, 5.9, true)
+          image: "assets/images/im_c2.png",
+          title: "apple iMac 30",
+          price: 1199,
+          star: 5.9,
+          isSaved: false,
+          colors: [Colors.orange,Colors.green,Colors.pinkAccent],
+          desc: "Wait: Price Check on eBay — Try the eBay way—getting what you want doesn't have to be a splurge. Browse iMac 1. generation!",
+          descTitle: "apple iMac 24"),
     ],
   );
 }

@@ -3,6 +3,8 @@ import 'package:flutter_tasarim_1/model/products_model.dart';
 import 'package:flutter_tasarim_1/themes/color/Constant.dart';
 import 'package:grock/grock.dart';
 
+import '../ProductDetail.dart';
+
 class CustomProductsCardWidgets extends StatelessWidget {
   //Card'da gösterilecek ürünleri alıyoruz
   ProductsModel productsModel;
@@ -12,6 +14,8 @@ class CustomProductsCardWidgets extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GrockContainer(
+      //Tıklandığında detay sayfasına git
+      onTap: () => Grock.to(ProductDetail(productsModel: productsModel)),
       width: 150,
       decoration: BoxDecoration(
         color: Constant.white,
@@ -26,9 +30,12 @@ class CustomProductsCardWidgets extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             //Görselleri yükle
-            Image.asset(
-              productsModel.image,
-              fit: BoxFit.contain,
+            Hero(
+              tag: productsModel.image,
+              child: Image.asset(
+                productsModel.image,
+                fit: BoxFit.contain,
+              ),
             ),
             //Yazılar
             Padding(
