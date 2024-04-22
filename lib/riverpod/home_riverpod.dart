@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tasarim_1/model/home_category_model.dart';
 
-
-
 class HomeRiverPod extends ChangeNotifier {
   //kayan pencerede yer alacak nesneler
 

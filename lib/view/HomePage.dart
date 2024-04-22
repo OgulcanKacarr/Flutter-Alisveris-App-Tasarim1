@@ -23,7 +23,6 @@ class _HomePageState extends ConsumerState<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Constant.white,
-      appBar: CustomAppBarWidgets(),
       body: _buildBody(),
     );
   }

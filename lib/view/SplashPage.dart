@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tasarim_1/themes/color/Constant.dart';
 import 'package:flutter_tasarim_1/view/HomePage.dart';
+import 'package:flutter_tasarim_1/view/base_scaffold.dart';
 import 'package:flutter_tasarim_1/viewmodel/SplashPageViewModel.dart';
 import 'package:grock/grock.dart';
 
@@ -17,7 +18,7 @@ class _SplashPageState extends State<SplashPage> {
   void initState() {
     Future.delayed(Duration(seconds: 2), () {
       //2 saniye sonra geri dönemeksizin ana sayfaya git
-      Grock.toRemove(HomePage());
+      Grock.toRemove(BaseScaffold());
     });
     super.initState();
   }
