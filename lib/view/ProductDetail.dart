@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_tasarim_1/view/CartPage.dart';
 import 'package:grock/grock.dart';
 
 import '../model/products_model.dart';
@@ -147,7 +148,7 @@ class _ProductDetailState extends ConsumerState<ProductDetail> {
                     padding: [20, 20, 20, 25].paddingLTRB,
                     child: Center(
                       child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {Grock.to(CartPage());},
                           style: ButtonStyle(
                           ),
                           child: Text(
